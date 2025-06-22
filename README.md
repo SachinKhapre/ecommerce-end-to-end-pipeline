@@ -128,6 +128,3 @@ dbt run
 
 ---
 =======
-# ecommerce-end-to-end-pipeline
-Ecommerce end-to-end pipeline with Fakestore API
->>>>>>> cce6a4015fef5d65f767d24d313ac020aa70051c
