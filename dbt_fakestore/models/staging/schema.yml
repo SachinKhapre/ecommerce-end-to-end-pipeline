@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: public
+    database: fakestore-ecommerce
+    schema: public
+    tables:
+      - name: stg_customer_revenue
+      - name: stg_product_revenue

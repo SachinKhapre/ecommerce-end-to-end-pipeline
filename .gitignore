@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.ipynb_checkpoints
+.env
+.env.*
+
+# Virtual environments
+venv/
+.env/
+.venv/
+env/
+ENV/
+fakenv/
+
+# Airflow
+airflow/logs/
+airflow/airflow.db
+airflow/airflow.cfg
+airflow/unittests.cfg
+airflow/.airflowenv
+airflow/.python_history
+airflow.cfg
+logs/
+
+# Docker
+*.log
+docker-compose.override.yml
+*.pid
+*.sock
+.docker/
+.dockerignore
+docker/db_data/
+postgres_data/
+
+# DBT
+dbt_fakestore/target/
+dbt_fakestore/dbt_modules/
+dbt_fakestore/.dbt/
+
+# Spark
+spark-warehouse/
+metastore_db/
+derby.log
+
+# S3 temp/local files
+*.parquet
+*.csv
+*.json
+
+# VSCode & IDE
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+webserver_config.py 
