@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🛒 E-commerce Data Engineering Pipeline
 
 An end-to-end data engineering project that ingests live e-commerce API data, processes it using Apache Spark, stores it in PostgreSQL and S3, models it with DBT, and orchestrates the workflow using Apache Airflow — all fully containerized using Docker.
