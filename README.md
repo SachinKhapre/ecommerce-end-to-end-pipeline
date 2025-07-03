@@ -19,7 +19,20 @@ An end-to-end data engineering project that ingests live e-commerce API data, pr
 
 ## 🧱 Project Architecture
 
-<pre> ```mermaid graph TD A[Live API<br/>(JSON)] --> B[Ingestion Script<br/>(Python)] B --> C[PostgreSQL<br/>(raw tables)] C --> D[S3 Upload Script] D --> E[S3<br/>(raw zone)] E --> F[Spark Job<br/>in Docker] F --> G[S3<br/>(processed zone - Parquet)] G --> H[Loader Script<br/>(Python)] H --> I[PostgreSQL<br/>(staging)] I --> J[DBT Models] J --> K[PostgreSQL<br/>(marts)] K --> L[Airflow DAG<br/>Orchestration] ``` </pre>
+```mermaid
+graph TD
+  A[Live API &#40;JSON&#41;] --> B[Ingestion Script &#40;Python&#41;]
+  B --> C[PostgreSQL &#40;raw tables&#41;]
+  C --> D[S3 Upload Script]
+  D --> E[S3 &#40;raw zone&#41;]
+  E --> F[Spark Job in Docker]
+  F --> G[S3 &#40;processed zone - Parquet&#41;]
+  G --> H[Loader Script &#40;Python&#41;]
+  H --> I[PostgreSQL &#40;staging&#41;]
+  I --> J[DBT Models]
+  J --> K[PostgreSQL &#40;marts&#41;]
+  K --> L[Airflow DAG Orchestration]
+```
 
 ---
 
